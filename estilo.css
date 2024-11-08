@@ -1,0 +1,261 @@
+/* Reset básico y estilos generales */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Century Gothic', sans-serif;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Estilo para el título */
+.titulo {
+	padding: 40px;
+}
+
+/* Estilo de la barra de navegación */
+nav ul {
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	list-style-type: none;
+	background-color: #1286c9;
+}
+nav li {
+	display: inline-flex;
+}
+nav a {
+	padding: 20px;
+	width: 150px;
+}
+nav ul a:hover {
+	background-color: white;
+}
+
+/* Contenedor principal de contenido */
+.contenido {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+.contenido .articulo {
+	width: 70%;
+	margin: auto;
+}
+.contenido .articulo div {
+	width: 90%;
+	padding: 15px;
+	background-color: #69b5e0;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.contenido .articulo img {
+	width: 200px;
+	border-radius: 15px;
+}
+.contenido .secundario {
+	width: 30%;
+}
+.contenido .secundario p {
+	background-color: #0a476b;
+	border-radius: 15px;
+	padding: 20px;
+	height: 300px;
+}
+.contenido .secundario img {
+    width: 100%;
+    border-radius: 15px; 
+    object-fit: cover;
+}
+
+/* Pie de página */
+.piedepagina {
+	background-color: #0a476b;
+	margin-top: 100px;
+}
+.piedepagina p {
+	padding: 100px;
+}
+
+/* inicio y orevencion diseño css igual*/
+
+/* css 2 responsabilidad */
+.cabecera {
+	background-color: #0a476b;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+/* Sección principal del contenido con grid */
+.seccion-principal {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+	width: 80%;
+	margin: auto;
+}
+
+.contenido-empresarial, .proteccion-ciudadana {
+	background-color: #69b5e0;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.contenido-empresarial img, .proteccion-ciudadana img {
+	width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+/* Estilo para la sección de información adicional */
+.informacion-extra {
+	background-color: #1286c9;
+	padding: 20px;
+	border-radius: 10px;
+	color: white;
+	width: 80%;
+	margin: 30px auto;
+}
+
+/* Estilo del pie de página específico para esta sección */
+.piedepagina-empresarial {
+	background-color: #0a476b;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+/* css de tecnologia de la informacion*/
+
+.cabecera-tecnologia {
+	background-color: #1286c9;
+	color: white;
+	padding: 50px;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+.cabecera-tecnologia p {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+/* Sección principal con tarjetas */
+.contenido-tecnologia {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	width: 80%;
+	margin: auto;
+}
+
+.tarjeta {
+	background-color: #69b5e0;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.tarjeta img {
+	width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+	color: #0a476b;
+	margin-bottom: 10px;
+}
+
+/* Pie de página específico para la página de tecnología */
+.piedepagina-tecnologia {
+	background-color: #0a476b;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+/*css final*/
+/* Fondo de imagen para la página sobre nosotros */
+.cabecera-sobre-nosotros {
+    background-color: #0a476b;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fondo-cdmx {
+    background-image: url('img/fondo-cdmx.jpg'); /
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+
+.fondo-cdmx h2, .fondo-cdmx p {
+    color: white; /* color del texto  */
+    background-color: rgba(0, 0, 0, 0.6); /* Oscurecer */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.informacion-proyecto {
+    background-color: #1286c9;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.informacion-proyecto h3, .informacion-proyecto h4 {
+    margin-bottom: 20px;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #69b5e0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.miembro {
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.piedepagina-sobre-nosotros {
+    background-color: #0a476b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+
+
